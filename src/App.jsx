@@ -31,7 +31,7 @@ export function App() {
 
   useEffect(() => {
     setPositiveFeedback(total ? Math.round((good / total) * 100) : 0);
-  }, [good, neutral, bad]);
+  }, [good, neutral, bad, total]);
 
   return (
     <div>
